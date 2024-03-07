@@ -36,8 +36,6 @@ void display() {			// Prosedur untuk menampilkan hasil
 	for (int j = 0; j < n; j++) {				//Looping dengan j dimulai dari o hingga n-1
 		cout << "Data Ke-" << j + 1 << ": ";
 		cout << a[j] << endl;					//Output ke layar
-
-
 	}
-
+	cout << endl;								//Output baris kosong
 }
