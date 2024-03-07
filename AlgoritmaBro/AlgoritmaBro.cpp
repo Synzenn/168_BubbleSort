@@ -28,8 +28,16 @@ void input() {		//Prosedur untuk input
 	}
 }
 
-void display() {
+void display() {			// Prosedur untuk menampilkan hasil
+	cout << endl;			// output baris kosong
+	cout << "================================" << endl;		//Output ke layar 
+	cout << "Elemen Array yang telah tersusun" << endl;		//Output ke layar
+	cout << "================================" << endl;		//Output ke layar
+	for (int j = 0; j < n; j++) {				//Looping dengan j dimulai dari o hingga n-1
+		cout << "Data Ke-" << j + 1 << ": ";
+		cout << a[j] << endl;					//Output ke layar
 
 
+	}
 
 }
