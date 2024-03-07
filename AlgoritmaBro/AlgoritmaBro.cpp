@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-int main();
-
 int a[20];				//Deklarasi array a dengan ukuran 20
 int n;					//Deklarasi variabel n untuk menyimpan banyaknya elemen pada array
 
@@ -18,9 +16,9 @@ void input() {		//Prosedur untuk input
 
 	}
 	cout << endl;								// output ke layar
-	cout << "================" << endl;			// output ke layar
+	cout << "=====================" << endl;			// output ke layar
 	cout << "Masukkan Elemen Array" << endl;	// output ke layar
-	cout << "================" << endl;			// output ke layar
+	cout << "=====================" << endl;			// output ke layar
 
 	for (int i = 0; i < n; i++) {		// Looping dengan i dimulai dari 0 hingga n-1
 		cout << "Data ke-" << (i + 1) << "; ";	//Output ke layar
@@ -43,7 +41,7 @@ void display() {			// Prosedur untuk menampilkan hasil
 void bubbleSortArray() {						//Prosedur untuk mengurutkan array dengan metode bubble sort
 	int pass = 1;								//Step 1
 
-	for (pass; pass <= n - 1; pass + 1) {		//Looping dengan i dimulai dari 1 hingga n-1
+	for (pass; pass <= n - 1; pass++) {		//Looping dengan i dimulai dari 1 hingga n-1
 		for (int j = 0; j <= n - 1 - pass; j++) {	//Looping dengan j dimulai dari 0 hingga n-i
 			if (a[j] > a[j + 1]) {				//Jika nilai pada a[j] lebih besar dari a[j+1]
 				int temp = a[j];				//Simpan nilai a[j] ke variabel sementara temp
